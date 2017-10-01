@@ -1,0 +1,29 @@
+{
+  "name": "koa_server",
+  "version": "1.0.0",
+  "description": "Koa for Angular App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Koa",
+    "Angular"
+  ],
+  "author": "Alan Tai",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.2.0",
+    "koa-body": "^1.6.0",
+    "koa-router": "^7.1.1",
+    "koa-send": "^4.0.0",
+    "koa-static": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "co-mocha": "^1.2.0",
+    "koa-logger": "^2.0.1",
+    "mocha": "^3.5.3",
+    "reqlogger": "^1.2.1"
+  }
+}

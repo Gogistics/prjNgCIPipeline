@@ -3,9 +3,11 @@
 # Author:
 #   Alan Tai
 # Program:
-#   ...
+#   Generate a new Angular project
 # Date:
 #   9/30/2017
+
+set -ex
 
 # set environment variables
 source $(pwd)/scripts/envVariables
@@ -30,5 +32,5 @@ echo "continue"
 docker run \
   --rm \
   -v $PWD:$APP_DIR \
-  $DOCKER_ACCOUNT_NAME/$DOCKER_IMG_TAG_NG_CLI:$DOCKER_IMG_VERSION \
+  $DOCKER_ACCOUNT_NAME/$DOCKER_IMG_TAG_NG_CLI:$DOCKER_IMG_NG_CLI_VERSION \
   ng new $NAME

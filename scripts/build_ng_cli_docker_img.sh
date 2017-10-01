@@ -3,7 +3,7 @@
 # Author:
 #   Alan Tai
 # Program:
-#   ...
+#   Build base of docker image of Angular CLI
 # Date:
 #   9/30/2017
 
@@ -26,7 +26,7 @@ normal=$(tput sgr0)
 
 
 docker build \
-  -t $DOCKER_ACCOUNT_NAME/$DOCKER_IMG_TAG_NG_CLI:$DOCKER_IMG_VERSION \
+  -t $DOCKER_ACCOUNT_NAME/$DOCKER_IMG_TAG_NG_CLI:$DOCKER_IMG_NG_CLI_VERSION \
   --build-arg NG_CLI_VERSION=$NG_CLI_VERSION \
   --build-arg USER_HOME_DIR=$USER_HOME_DIR \
   --build-arg APP_DIR=$APP_DIR \

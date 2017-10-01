@@ -60,3 +60,4 @@ $ du -h dist/
 
 References:
 [Adding Self-signed Registry Certs to Docker & Docker for Mac](http://container-solutions.com/adding-self-signed-registry-certs-docker-mac/)
+[dumb-init](https://github.com/Yelp/dumb-init)
