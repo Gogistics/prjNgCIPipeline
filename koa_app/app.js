@@ -12,16 +12,14 @@ const envVars = {
 }
 
 /*
-* API
+* REST API
+* Note: this topic will be provided in CI Pipeline for Angular (3)
 */
-
-// rest api
 router.get('/ng-api/hello', async function(ctx) {
   const resp = {resp: 'world'};
   ctx.body = resp;
   console.log('return user information');
 });
-// \api
 
 // use routes
 app.use(router.routes())

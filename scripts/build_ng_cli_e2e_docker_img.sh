@@ -3,7 +3,7 @@
 # Author:
 #   Alan Tai
 # Program:
-#   Build docker image of e2e testing of Angular app
+#   Build the docker image for e2e testing of Angular app
 # Date:
 #   9/30/2017
 

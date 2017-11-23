@@ -3,7 +3,7 @@
 # Author:
 #   Alan Tai
 # Program:
-#   Generate a new Angular project
+#   Spin up the Koa application and manage the application by pm2
 # Date:
 #   9/30/2017
 

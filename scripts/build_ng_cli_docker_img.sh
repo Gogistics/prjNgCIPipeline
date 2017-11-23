@@ -3,7 +3,7 @@
 # Author:
 #   Alan Tai
 # Program:
-#   Build base of docker image of Angular CLI
+#   Build the base of the docker image of Angular CLI
 # Date:
 #   9/30/2017
 
@@ -23,7 +23,6 @@ source $(pwd)/scripts/envVariables
 # text styles
 bold=$(tput bold)
 normal=$(tput sgr0)
-
 
 docker build \
   -t $DOCKER_ACCOUNT_NAME/$DOCKER_IMG_TAG_NG_CLI:$DOCKER_IMG_NG_CLI_VERSION \

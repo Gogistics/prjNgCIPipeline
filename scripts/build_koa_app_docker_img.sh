@@ -3,7 +3,7 @@
 # Author:
 #   Alan Tai
 # Program:
-#   ...
+#   Build docker image for Koa application
 # Date:
 #   9/30/2017
 
@@ -25,7 +25,6 @@ source $(pwd)/scripts/envVariables
 # text styles
 bold=$(tput bold)
 normal=$(tput sgr0)
-
 
 docker build \
   -t $DOCKER_ACCOUNT_NAME/$DOCKER_IMG_TAG_KOA:$DOCKER_IMG_KOA_VERSION \

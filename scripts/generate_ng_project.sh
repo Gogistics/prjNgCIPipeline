@@ -28,7 +28,8 @@ while [[ $# -gt 0 ]]; do
       ;;
   esac
 done
-echo "continue"
+echo "ready to generate a new Angular project"
+
 docker run \
   --rm \
   -v $PWD:$APP_DIR \

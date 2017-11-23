@@ -1,4 +1,11 @@
 #!/bin/bash
+#
+# Author:
+#   Alan Tai
+# Program:
+#   Find free server number
+# Date:
+#   9/30/2017
 
 find_free_servernum() {
     i=0
