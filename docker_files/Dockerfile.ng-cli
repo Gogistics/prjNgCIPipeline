@@ -1,11 +1,6 @@
 ###
 # References: https://github.com/trion-development
-#
-# Docker file for creating ng-cli
-# How to use this image:
-#   $ docker run -u $(id -u) --rm -v "$PWD":/app trion/ng-cli ng new MyDemo
-#   $ cd MyDemo
-#   $ docker run -u $(id -u) --rm -v "$PWD":/app trion/ng-cli ng build
+###
 
 FROM node:8
 MAINTAINER Alan Tai "gogistics@gogistics-tw.com"
@@ -20,7 +15,6 @@ ENV LANG C.UTF-8
 ENV HOME $USER_HOME_DIR
 
 COPY ./scripts/dumb-init /usr/bin/dumb-init
-RUN ls /usr/bin/
 
 RUN set -xe && \
   chmod +x /usr/bin/dumb-init && \

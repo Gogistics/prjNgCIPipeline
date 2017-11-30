@@ -12,20 +12,20 @@ set -ex
 # set environment variables
 source $(pwd)/scripts/envVariables
 
-[[ $# -gt 0 ]] || (echo "No options" && exit 1)
+[[ $# -gt 0 ]] || (echo "No options" && exit $ERR_OPERATOR)
 
 while [[ $# -gt 0 ]]; do
   key="$1"
   case $key in
-      -n|--name)
-      NAME="$2"
-      shift # past argument
-      shift # past value
-      ;;
-      *)    # unknown option
-      echo "ERROR: unknown options"
-      exit 1
-      ;;
+    -n|--name)
+    NAME="$2"
+    shift # past argument
+    shift # past value
+    ;;
+    *)    # unknown option
+    echo "ERROR: unknown options"
+    exit $ERR_OPERATOR
+    ;;
   esac
 done
 echo "ready to generate a new Angular project"

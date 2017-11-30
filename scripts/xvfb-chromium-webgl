@@ -8,11 +8,11 @@
 #   9/30/2017
 
 find_free_servernum() {
-    i=0
-    while [ -f /tmp/.X$i-lock ]; do
-        i=$(($i + 1))
-    done
-    echo $i
+  i=0
+  while [ -f /tmp/.X$i-lock ]; do
+    i=$(($i + 1))
+  done
+  echo $i
 }
 
 export DISPLAY=":$(find_free_servernum)"

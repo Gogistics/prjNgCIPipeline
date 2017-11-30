@@ -12,7 +12,7 @@ set -ex
 # set environment variables
 source $(pwd)/scripts/envVariables
 
-[[ $# -gt 0 ]] || (echo "No options" && exit 1)
+[[ $# -gt 0 ]] || (echo "No options" && exit $ERR_OPERATOR)
 NAME="unknown"
 MODE="dev"
 BUILD_OPTIONS=""
@@ -32,7 +32,7 @@ while [[ $# -gt 0 ]]; do
     ;;
     *)    # unknown option
     echo "ERROR: unknown options"
-    exit 1
+    exit $ERR_OPERATOR
     ;;
   esac
 done

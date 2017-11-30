@@ -1,3 +1,7 @@
+###
+# References: https://github.com/trion-development
+###
+
 FROM node:8
 MAINTAINER Alan Tai "gogistics@gogistics-tw.com"
 
