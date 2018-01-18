@@ -66,5 +66,9 @@ docker run \
   -v $PWD/koa_app:$APP_DIR \
   -v $PWD/pipeline/dist:$APP_DIR/dist \
   -p 8080:8080 \
+  --log-opt mode=non-blocking \
+  --log-opt max-buffer-size=4m \
+  --log-opt max-size=100m \
+  --log-opt max-file=5 \
   $DOCKER_ACCOUNT_NAME/$DOCKER_IMG_TAG_KOA:$DOCKER_IMG_KOA_VERSION \
   sh -c "${commands_for_spinning_up_koa[*]}"
