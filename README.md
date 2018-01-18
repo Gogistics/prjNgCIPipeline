@@ -38,6 +38,8 @@ Tasks of establishing the pipeline:
 
 # 1. login docker registry
 $ docker login docker-registry.gogistics-tw.com
+or with user name and password
+$ docker login -u <username> -p <password> docker-registry.gogistics-tw.com
 
 # 2. create docker image by running scripts and then tag the docker image which is created and tested successfully. The commands below demo how to generate the docker image of ng-cli
 
@@ -73,6 +75,10 @@ $ docker run --rm -v "$PWD":/ng_app docker-registry.gogistics-tw.com/atai/ng-cli
 
 # once developers build features and want to generate bundle files, run the command below
 $ docker run --rm -v "$PWD":/ng_app docker-registry.gogistics-tw.com/atai/ng-cli:v1 ng build (-prod) (-aot)
+
+Note: if you encounter the build issue, **Node Sass could not find a binding for your current environment**, run change command to:
+
+$ docker run --rm -v "$PWD":/ng_app docker-registry.gogistics-tw.com/atai/ng-cli-e2e:v1 sh -c 'npm rebuild node-sass --force && ng build (-prod) (-aot)'
 
 # check size of folders
 $ du -h dist/
