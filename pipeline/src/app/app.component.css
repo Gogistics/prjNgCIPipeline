@@ -1,0 +1,13 @@
+#my-angular {
+  -webkit-animation: rotation 3s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {-webkit-transform: rotateY(0deg);}
+  to   {-webkit-transform: rotateY(180deg);}
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
