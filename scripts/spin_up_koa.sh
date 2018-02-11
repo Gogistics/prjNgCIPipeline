@@ -58,7 +58,7 @@ commands_for_spinning_up_koa=(
 docker run \
   --rm \
   -v $PWD:$APP_DIR $DOCKER_ACCOUNT_NAME/$DOCKER_IMG_TAG_NG_CLI:$DOCKER_IMG_NG_CLI_VERSION \
-  sh -c "ng build $BUILD_OPTIONS" && \
+  sh -c "ng build $BUILD_OPTIONS"
 
 # spin up container
 docker run \
